@@ -34,7 +34,8 @@ This project is a machine learning service built with FastAPI to predict cirrhos
 
 Fill in the required patient data and click the "Predict" button to submit the form. The prediction result will be displayed on the page.
 
-![Cirrhosis Prediction Form](.\Practice-ML-DEV-Hw\cases\case_5\HW3_fastapi\myapp.png)
+![Cirrhosis Prediction Form](https://github.com/Renzo-Fu/Practice-ML-DEV-Hw/blob/master/cases/case_5/HW3_fastapi/myapp.png)
+
 
 ## Troubleshooting
 
