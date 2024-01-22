@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cirrhosis Prediction</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Cirrhosis Prediction</h1>
+
+    <form id="predictionForm">
+        <label for="N_Days">N_Days:</label>
+        <input type="text" id="N_Days" name="N_Days" required><br>
+
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" required><br>
+
+        <label for="Bilirubin">Bilirubin:</label>
+        <input type="text" id="Bilirubin" name="Bilirubin" required><br>
+
+        <label for="Cholesterol">Cholesterol:</label>
+        <input type="text" id="Cholesterol" name="Cholesterol" required><br>
+
+        <label for="Albumin">Albumin:</label>
+        <input type="text" id="Albumin" name="Albumin" required><br>
+
+        <button type="button" onclick="predict()">Predict</button>
+    </form>
+
+    <div id="predictionResult"></div>
+
+    <script>
+        function predict() {
+            // Collect input data from the form
+            const inputData = {
+                "N_Days": document.getElementById("N_Days").value,
+                "Age": document.getElementById("Age").value,
+                "Bilirubin": document.getElementById("Bilirubin").value,
+                "Cholesterol": document.getElementById("Cholesterol").value,
+                "Albumin": document.getElementById("Albumin").value,
+            };
+
+            // Make a POST request to the FastAPI endpoint
+            fetch('http://127.0.0.1:8000/predict_cirrhosis', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(inputData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display the prediction result
+                document.getElementById("predictionResult").innerHTML = `<p>Prediction Result: ${JSON.stringify(data)}</p>`;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
