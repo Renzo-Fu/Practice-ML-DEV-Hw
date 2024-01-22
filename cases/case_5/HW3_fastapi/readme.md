@@ -43,6 +43,6 @@ If you encounter any issues, please check the terminal where the FastAPI server 
 
 ## Author
 
-[Your Name]
+Renzo Flores
 
 Feel free to reach out for any questions or improvements!
