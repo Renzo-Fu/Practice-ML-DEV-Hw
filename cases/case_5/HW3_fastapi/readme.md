@@ -28,7 +28,7 @@ This project is a machine learning service built with FastAPI to predict cirrhos
 
     The HTML form will be available at http://127.0.0.1:8000/index.html.
 
-4. **Access the Application**: Open your web browser and navigate to http://127.0.0.1:8000/index.html. You should see the Cirrhosis Prediction form.
+4. **Access the Application**: Open your web browser and navigate to http://localhost:8000/index.html. You should see the Cirrhosis Prediction form.
 
 ## Cirrhosis Prediction Form
 
