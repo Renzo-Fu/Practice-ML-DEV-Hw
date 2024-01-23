@@ -28,13 +28,14 @@ This project is a machine learning service built with FastAPI to predict cirrhos
 
     The HTML form will be available at http://127.0.0.1:8000/index.html.
 
-4. **Access the Application**: Open your web browser and navigate to http://127.0.0.1:8000/index.html. You should see the Cirrhosis Prediction form.
+4. **Access the Application**: Open your web browser and navigate to http://localhost:8000/index.html. You should see the Cirrhosis Prediction form.
 
 ## Cirrhosis Prediction Form
 
 Fill in the required patient data and click the "Predict" button to submit the form. The prediction result will be displayed on the page.
 
-![Cirrhosis Prediction Form](.\Practice-ML-DEV-Hw\cases\case_5\HW3_fastapi\myapp.png)
+![Cirrhosis Prediction Form](https://github.com/Renzo-Fu/Practice-ML-DEV-Hw/blob/master/cases/case_5/HW3_fastapi/myapp.png)
+
 
 ## Troubleshooting
 
@@ -42,6 +43,6 @@ If you encounter any issues, please check the terminal where the FastAPI server 
 
 ## Author
 
-[Your Name]
+Renzo Flores
 
 Feel free to reach out for any questions or improvements!
