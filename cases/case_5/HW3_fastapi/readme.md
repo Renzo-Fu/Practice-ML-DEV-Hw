@@ -29,13 +29,19 @@ This project is a machine learning service built with FastAPI to predict cirrhos
     The HTML form will be available at http://127.0.0.1:8000/index.html.
 
 4. **Access the Application**: Open your web browser and navigate to http://localhost:8000/index.html. You should see the Cirrhosis Prediction form.
+## Cirrhosis Prediction Log in window
+ Fill with your data to log in if not then you can create a new account
+![Cirrhosis Prediction Log in](https://github.com/Renzo-Fu/Practice-ML-DEV-Hw/blob/master/cases/case_5/HW3_fastapi/Pictures/login.png)
 
 ## Cirrhosis Prediction Form
 
 Fill in the required patient data and click the "Predict" button to submit the form. The prediction result will be displayed on the page.
 
-![Cirrhosis Prediction Form](https://github.com/Renzo-Fu/Practice-ML-DEV-Hw/blob/master/cases/case_5/HW3_fastapi/myapp.png)
+![Cirrhosis Prediction Form](https://github.com/Renzo-Fu/Practice-ML-DEV-Hw/blob/master/cases/case_5/HW3_fastapi/Pictures/myapp.png)
 
+## Cirrhosis Prediction History and balance
+Here is shown the history of usage of the service and the balance
+![Cirrhosis Prediction Form](https://github.com/Renzo-Fu/Practice-ML-DEV-Hw/blob/master/cases/case_5/HW3_fastapi/Pictures/history_and_balance.png)
 
 Certainly! Below is an example of how you might write the instructions for running a service using Docker and Uvicorn in a `README.md` file for a GitHub repository. This example assumes you have a FastAPI application and you are looking to containerize it for easy deployment and execution.
 
