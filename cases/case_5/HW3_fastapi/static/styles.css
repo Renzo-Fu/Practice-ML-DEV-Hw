@@ -1,9 +1,9 @@
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    margin: 20px;
+    margin: 0;
+    padding-top: 60px; /* added padding to ensure the content doesn't hide behind the fixed user profile */
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 
 form {
     max-width: 400px;
-    margin: auto;
+    margin: 30px auto; /* increased margin for visual spacing from the top */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -50,4 +50,56 @@ button:hover {
 
 #predictionResult {
     margin-top: 20px;
+}
+
+/* Styles for user profile */
+.user-profile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff; /* added background color for visibility */
+    padding: 10px; /* added padding for spacing */
+    padding-right: 20px; /* reduced padding on the right for slight left movement */
+    border-radius: 0 0 0 8px; /* rounded bottom-left corner */
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    z-index: 1000; /* ensure it's above other elements */
+}
+
+.user-details .user-name,
+.user-balance #userBalance {
+    font-size: 1.2em; /* increased font size for name and balance */
+}
+
+.user-details {
+    font-size: 0.9em;
+    color: #007bff;
+    margin-bottom: 5px; /* added margin for spacing between details and balance */
+}
+
+.user-balance {
+    font-size: 0.8em;
+    color: #333;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+/* Styles for prediction history */
+#predictionHistory {
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-entry {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.history-entry:last-child {
+    border-bottom: none;
 }

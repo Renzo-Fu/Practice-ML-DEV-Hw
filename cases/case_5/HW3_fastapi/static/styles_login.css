@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding-top: 100px; /* Adjusted to center the form on the page vertically */
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Use full height to center the login container */
+}
+
+.login-container {
+    width: 340px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px; /* Space between title and form */
+}
+
+form {
+    max-width: 300px; /* Slightly narrower form for aesthetics */
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left; /* Align text to the left */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 10px); /* Full width input fields */
+    padding: 10px; /* Padding for input fields */
+    margin-bottom: 15px; /* Margin bottom for spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Space between the button and the forgot password link */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em; /* Larger font size for button text */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    color: #007bff;
+    font-size: 0.9em;
+    margin-bottom: 20px; /* Space between the forgot password link and the separator */
+}
+
+.separator {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px; /* Space between the separator and the create account button */
+}
+
+#createAccount {
+    width: 100%;
+    padding: 10px;
+    background-color: #42b72a; /* Facebook-style green button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em; /* Larger font size for button text */
+}
+
+#createAccount:hover {
+    background-color: #36a420; /* Darker green on hover */
+}
+
+#loginResult {
+    color: red; /* Color for error messages */
+    margin-top: 20px;
+}

@@ -7,6 +7,17 @@
     <link rel="stylesheet" type="text/css" href="../static/styles.css">
 </head>
 <body>
+    <div class="user-profile">
+        <div class="user-details">
+            <span class="user-name">Флорес Рензо</span><br>
+            
+        </div>
+        <div class="user-balance">
+            <span>Balance: <span id="userBalance">167.89$</span></span><br>
+            
+        </div>
+    </div>
+
     <h1>Cirrhosis Prediction</h1>
 
     <form id="predictionForm">
@@ -29,7 +40,16 @@
     </form>
 
     <div id="predictionResult"></div>
-
+    <div id="predictionHistory">
+        <h2>Prediction History</h2>
+        <div class="history-entry">
+            <p>Date: 2024-01-24</p>
+            <p>Prediction: Positive</p>
+            <p>Details: N_Days: 100, Age: 50, Bilirubin: 1.2, Cholesterol: 200, Albumin: 3.5</p>
+        </div>
+        <!-- Additional test entries would go here -->
+    </div>
+    
     <script>
         function predict() {
             // Collect input data from the form
